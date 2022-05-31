@@ -490,7 +490,7 @@ pub fn handle(
             QueueState::Stopped => {}
             QueueState::Stopping => q.reset_first_job(JobState::Queued),
             QueueState::Running => q.reset_first_job(JobState::Failed(
-                "Interrupted by system failure, please re-submit or ask for assistence".to_owned(),
+                "Interrupted by system failure, please re-submit or ask for assistance".to_owned(),
             )),
         }
     }
